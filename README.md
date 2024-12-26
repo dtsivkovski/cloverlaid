@@ -8,7 +8,7 @@ Easy Overlay is built with Next.js to provide an easy image overlay and channel 
 
 ## Access Cloverlaid
 
-You can access Cloverlaid at [this link](https://github.com/dtsivkovski/easy-overlay).
+You can access Cloverlaid at [this link](https://cloverlaid.tsiv.dev/).
 
 ## Getting Started
 
