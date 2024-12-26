@@ -1,4 +1,4 @@
-# Easy Overlay
+# Cloverlaid
 
 A purely browser-based solution for simple and straightforward editing on the go.
 
@@ -6,9 +6,9 @@ A purely browser-based solution for simple and straightforward editing on the go
 
 Easy Overlay is built with Next.js to provide an easy image overlay and channel manipulation tool directly in your browser.
 
-## Access Easy Overlay
+## Access Cloverlaid
 
-You can access Easy Overlay at [this link](https://github.com/dtsivkovski/easy-overlay).
+You can access Cloverlaid at [this link](https://github.com/dtsivkovski/easy-overlay).
 
 ## Getting Started
 
