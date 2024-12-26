@@ -12,13 +12,21 @@ You can access Cloverlaid at [this link](https://cloverlaid.tsiv.dev/).
 
 ## Getting Started
 
-1. Install dependencies:
+1. Set node version
+
+This project uses node v22.5.1. Make sure to install this, or use node version manager in the root directory:
+
+```bash
+nvm use
+```
+
+2. Install dependencies:
 
 ```bash
 npm install
 ```
 
-2. Run the development server:
+3. Run the development server:
 
 ```bash
 npm run dev
