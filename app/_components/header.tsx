@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Linkedin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -20,26 +19,31 @@ const MainHeader = () => {
                 <Link href="https://github.com/dtsivkovski/cloverlaid" title="My Github">
                     <Button variant="outline" size="icon"> 
                         <Image
-                        src="/github-mark.svg"
-                        alt="Github"
-                        width={24}
-                        height={24}
+                            src="/github-mark.svg"
+                            alt="Github"
+                            width={22}
+                            height={22}
                         />
                     </Button>
                 </Link>
                 <Link href="https://linkedin.com/in/danieltsivkovski" title="My LinkedIn">
                     <Button variant="outline" size="icon">
-                        <Linkedin size={24} />
+                        <Image
+                            src="/In-Blue-128.png"
+                            alt="LinkedIn"
+                            width={22}
+                            height={22}
+                        />
                     </Button>
                 </Link>
                 <Link href="https://ko-fi.com/dtsivkovski" title="Buy me a coffee!">
                     <Button variant="outline" size="icon"> 
                         <Image
-                        className="attention-anim"
-                        src="/kofi.webp"
-                        alt="Ko-fi"
-                        width={24}
-                        height={24}
+                            className="attention-anim"
+                            src="/kofi.webp"
+                            alt="Ko-fi"
+                            width={24}
+                            height={24}
                         />
                     </Button>
                 </Link>
