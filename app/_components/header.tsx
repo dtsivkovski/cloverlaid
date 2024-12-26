@@ -17,7 +17,7 @@ const MainHeader = () => {
                 <h1 className="text-4xl font-bold text-center select-none rgb-text-clip maven-pro-standard">Cloverlaid</h1>
             </div>
             <div className="flex flex-row items-center justify-start gap-x-2">
-                <Link href="https://github.com/dtsivkovski">
+                <Link href="https://github.com/dtsivkovski/cloverlaid" title="My Github">
                     <Button variant="outline" size="icon"> 
                         <Image
                         src="/github-mark.svg"
@@ -27,12 +27,12 @@ const MainHeader = () => {
                         />
                     </Button>
                 </Link>
-                <Link href="https://linkedin.com/in/danieltsivkovski">
+                <Link href="https://linkedin.com/in/danieltsivkovski" title="My LinkedIn">
                     <Button variant="outline" size="icon">
                         <Linkedin size={24} />
                     </Button>
                 </Link>
-                <Link href="https://ko-fi.com/dtsivkovski">
+                <Link href="https://ko-fi.com/dtsivkovski" title="Buy me a coffee!">
                     <Button variant="outline" size="icon"> 
                         <Image
                         className="attention-anim"
