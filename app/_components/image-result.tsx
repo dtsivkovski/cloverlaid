@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
 import { Jimp } from "jimp";
 import { Slider } from "@/components/ui/slider";
+import { cn } from "@/lib/utils";
 
 type ImageResultProps = {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -90,9 +91,9 @@ export const ImageResult = ({redJimpImage, greenJimpImage, blueJimpImage}: Image
         <div className="flex flex-col items-center justify-start w-full h-full p-4">
             <h1 className="text-xl font-bold">Image Result</h1>
             <div className="flex flex-row items-center justify-center gap-x-2 p-2">
-                <Checkbox className="bg-gray-500 data-[state=checked]:bg-red-500" checked={redJimpImage} />
-                <Checkbox className="bg-gray-500 data-[state=checked]:bg-green-600" checked={greenJimpImage} />
-                <Checkbox className="bg-gray-500 data-[state=checked]:bg-blue-600" checked={blueJimpImage} />
+                <Checkbox className="bg-gray-500 data-[state=checked]:bg-red-500 cursor-default" checked={redJimpImage} />
+                <Checkbox className="bg-gray-500 data-[state=checked]:bg-green-600 cursor-default" checked={greenJimpImage} />
+                <Checkbox className="bg-gray-500 data-[state=checked]:bg-blue-600 cursor-default" checked={blueJimpImage} />
             </div>
             <div className="flex flex-row items-center justify-center">
                 {areImagesSameResolution() === 1 ? (
@@ -160,7 +161,7 @@ export const ImageResult = ({redJimpImage, greenJimpImage, blueJimpImage}: Image
                         )}
                     </div>
                 ) : (
-                    <p className="text-red-500">{areImagesSameResolution() === 0 ? "Upload all images to get started." : "Images are not the same resolution."}</p>
+                    <p className={cn(areImagesSameResolution() === -1 ? "text-red-500" : "")}>{areImagesSameResolution() == 0 ? "Upload all images to get started." : "Images are not the same resolution."}</p>
                 )}
             </div>
         </div>
